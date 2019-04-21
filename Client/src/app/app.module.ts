@@ -10,6 +10,7 @@ import { BikesModule } from './pages/bikes/bikes.module';
 import { BuildersModule } from './pages/builders/builders.module';
 import { AuthModule } from './pages/auth/auth.module';
 import { NavComponent } from './layout/nav/nav.component';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { NavComponent } from './layout/nav/nav.component';
     AuthModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
