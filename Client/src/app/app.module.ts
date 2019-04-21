@@ -10,7 +10,7 @@ import { BikesModule } from './pages/bikes/bikes.module';
 import { BuildersModule } from './pages/builders/builders.module';
 import { AuthModule } from './pages/auth/auth.module';
 import { NavComponent } from './layout/nav/nav.component';
-import { BrowserModule, Title } from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
